@@ -1,0 +1,97 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.demo {
+  width: 50%;
+  margin: 0 auto;
+}
+.box, .item {
+  position: relative;
+  border: 3px solid #ccc;
+  background: #fff;
+}
+.box1 {
+  padding: 40px;
+  border: 3px solid #ccc;
+  background: #fff;
+}
+.box0, .box2 {
+  padding: 40px;
+}
+
+.list {
+  margin: 0;
+  padding: 40px;
+}
+.list li {
+  padding-top: 40px;
+  list-style-type: none;
+}
+.list li:nth-child(odd) {
+  margin: 20px 0;
+}
+.one {
+  margin-bottom: 40px;
+}
+.label {
+  font-family: Lucida, Helvetica;
+  position: absolute;
+  top: 4px;
+  left: 16px;
+  color: #666;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.clickable {
+  background-color: cyan;
+}
+.listener-ball {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #FF4136;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 1;
+}
+.shake-listener {
+  background-color: #FF4136;
+}
+.shake-listener > .label {
+  color: #fff;
+}
+.miniform {
+  text-align: center;
+  max-width: 70%;
+  margin: 50px auto;
+  font-size: 16px;
+}
+.btn {
+  margin-left: 16px;
+  border: none;
+  background: #39CCCC;
+  color: white;
+  padding: 8px 16px;
+}
+
+/* propagation */
+.capture {
+  border-left: 3px solid blue;
+}
+.target {
+  border-bottom: 3px solid blue;
+}
+.bubble {
+  border-right: 3px solid blue;
+}
+
+/* utility classes */
+.hidden {
+  display: none;
+}

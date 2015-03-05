@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo 5</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <!-- <div class="listener-ball"></div> -->
+  <form class="miniform">
+    <p><input type="checkbox" class="checkbox" value="true"><span>Browser Vision</span></p>
+      <code>$('</code><input type="text" class="selector" /><code>').click(shake);</code>
+      <input type="submit" class="btn submit"><input type="reset" class="btn reset">
+  </form>
+  <form class="miniform">
+      <code>$('</code><input type="text" class="selector" /><code>').click(delegatedShake);</code>
+      <input type="submit" class="btn submit-del"><input type="reset" class="btn reset">
+  </form>
+  <div class="demo">
+    <ul id="list" class="list box"><span class="label">#list</span>
+      <li id="item1" class="item item1"><span class="label">.item .item1 #item1</span></li>
+      <li id="item2" class="item item2"><span class="label">.item .item2 #item2</span></li>
+      <li id="item3" class="item item3"><span class="label">.item .item3 #item3</span></li>
+      <li id="item4" class="item item4"><span class="label">.item .item4 #item4</span></li>
+      <li id="item5" class="item item5"><span class="label">.item .item5 #item5</span></li>
+      <li id="item6" class="item item6"><span class="label">.item .item6 #item6</span></li>
+      <div id="box1" class="box1 box"><span class="label">#box1</span></div>
+    </ul>
+  </div>
+  <script src="../draggabilly.pkgd.js"></script>
+  <script src="../droppabilly.js"></script>
+  <script src="../jquery-2.1.1.js"></script>
+  <script src="../main.js"></script>
+</body>
+</html>
