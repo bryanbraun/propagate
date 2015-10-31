@@ -80,64 +80,6 @@ function unsetHoverBehavior() {
   $('.box').unbind('mouseleave');
 }
 
-var listenerBalls = document.querySelectorAll('.listener-ball');
-var dragBalls = [];
-for (var i = 0; i < listenerBalls.length; i++) {
-  dragBalls[i] = new Draggabilly(listenerBalls[i]);
-}
-
-
-
-/*
-    Commenting because I only it working with a single dropzone. The multiple
-    Dropzone problem is a known issue: https://github.com/chienhungchen/droppabilly/issues/2
-
-
-var dropzones = document.getElementsByClassName('box');
-var dropsters = [];
-var settings = {
-      //--------------------
-      // classname of dragsters (passes directly into document.getElementsByClassName)
-      //--------------------
-      dragstersClassName: 'listener-ball',
-
-      //--------------------
-      // function is invoked when element is over the droppabilly
-      // drop is the droppabilly element
-      // drag is the current draggabilly element
-      //--------------------
-      over: function(drop, drag) {
-          $('.box').removeClass('clickable');
-          drop.classList.add('clickable');
-      },
-
-      //--------------------
-      // function is invoked when element moves out of the droppabilly
-      // drop is the droppabilly element
-      // drag is the current draggabilly element
-      //--------------------
-      out: function(drop, drag) {
-          drop.classList.remove('clickable');
-          $(drop).parent().addClass('clickable');
-      },
-
-      //--------------------
-      // function is invoked when element is dropped on the droppabilly
-      // drop is the droppabilly element
-      // drag is the current draggabilly element
-      //--------------------
-      drop: function(drop, drag) {
-          addShakeEvent('#' + drop.id);
-          drag.classList.add('hidden');
-      }
-  };
-
-for (var i = 0; i < dropzones.length; i++) {
-  dropsters[i] = new Droppabilly(dropzones[i], settings);
-}
-debugger;
-*/
-
 function addShakeEvent(selector) {
   var els = document.querySelectorAll(selector);
   for (var i = 0; i < els.length; i++) {
