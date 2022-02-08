@@ -1,0 +1,27 @@
+{
+  "name": "propagate",
+  "version": "0.0.1",
+  "description": "An interactive lesson about javascript events",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bryanbraun/propagate.git"
+  },
+  "author": "Bryan Braun",
+  "license": "CC0",
+  "bugs": {
+    "url": "https://github.com/bryanbraun/propagate/issues"
+  },
+  "homepage": "https://github.com/bryanbraun/propagate",
+  "dependencies": {
+    "dragula": "^3.5.2",
+    "jquery": "^2.1.4"
+  },
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "watchify": "^3.6.0"
+  }
+}
